@@ -9,4 +9,4 @@ A random port number of 8085 was chosen as the HTTP listening port.
 
 To run the docker image, use this command line: 
 
-docker run <chosen name>  geth --http --http.port 8085 --datadir "./Blockchain-data/" --networkid 1994911 --http.api debug,eth,web3,personal,net,admin
+docker run -it --network=host docker-test geth --http --http.port 8085 --datadir "./Blockchain-data/" --networkid 1994911 --http.api debug,eth,web3,personal,net,admin
