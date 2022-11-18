@@ -11,4 +11,4 @@ COPY genesis.json ./Blockchain-data/genesis.json
 
 RUN geth --http --http.port 8085 --datadir "./Blockchain-data/" init "Blockchain-data/genesis.json"
 
-# RUN geth --http --http.port 8085 --datadir "./Blockchain-data/" --networkid 1994911 --http.api debug,eth,web3,personal,net,admin
+# THis is the docker run command line: RUN geth --http --http.port 8085 --datadir "./Blockchain-data/" --networkid 1994911 --http.api debug,eth,web3,personal,net,admin
